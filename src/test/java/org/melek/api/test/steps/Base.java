@@ -8,7 +8,8 @@ public class Base {
     public Response response;
     public RequestSpecification requestSpecification = RestAssured.given();
 
-    // static değişkenimiz singleton class’ımızın instance’ı
+
+    //static variable is instance of singleton class
     private static Base instance = null;
 
 

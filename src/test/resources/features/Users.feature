@@ -30,7 +30,3 @@ Feature: User Operations
     Then status code should be 201
 
 
-
-
-
-
