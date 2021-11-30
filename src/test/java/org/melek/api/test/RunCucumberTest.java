@@ -12,8 +12,7 @@ import org.melek.api.test.configuration.RunnerConfiguration;
         features = "src/test/resources/features",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
-public class CucumberRunnerTest {
-
+public class RunCucumberTest {
     @BeforeClass()
     public static void doSomething() {
         RunnerConfiguration.configureBaseURI();
@@ -23,7 +22,4 @@ public class CucumberRunnerTest {
     public static void teardown() {
         System.out.println("Execution Report:\n" + System.getProperty("report.url"));
     }
-
 }
-
-
