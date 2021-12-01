@@ -1,7 +1,8 @@
-package org.melek.api.test.util;
+package org.melek.api.test.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -18,6 +19,5 @@ public class JsonUtil {
     public static String getSchemaPath(String schemaFileName) {
         return "json_files/" + schemaFileName;
     }
-
 
 }

@@ -11,7 +11,6 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <app.host.name>https://reqres.in</app.host.name>
         <env.code>LOCAL</env.code>
         <sut.version>1.0</sut.version>
         <reportFileName>${project.artifactId}-${env.code}-${sut.version}</reportFileName>
@@ -84,7 +83,6 @@
                             <extent.reporter.spark.base64imagesrc>true</extent.reporter.spark.base64imagesrc>
                             <screenshot.dir>target/test-report/${reportFileName}/media/</screenshot.dir>
                             <screenshot.rel.path>../${reportFileName}/media/</screenshot.rel.path>
-                            <systeminfo.Tested_Application>${app.host.name}</systeminfo.Tested_Application>
                             <systeminfo.Environment>${env.code}</systeminfo.Environment>
                             <systeminfo.Tested_Application_Version>${sut.version}</systeminfo.Tested_Application_Version>
                             <systeminfo.OS_Name>${os.name}</systeminfo.OS_Name>

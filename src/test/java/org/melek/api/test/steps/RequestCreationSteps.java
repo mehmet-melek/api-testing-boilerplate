@@ -1,7 +1,7 @@
 package org.melek.api.test.steps;
 
 import io.cucumber.java.en.Given;
-import org.melek.api.test.util.JsonUtil;
+import org.melek.api.test.utils.JsonUtil;
 
 public class RequestCreationSteps {
 
