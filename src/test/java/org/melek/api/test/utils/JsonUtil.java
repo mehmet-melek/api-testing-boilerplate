@@ -8,16 +8,13 @@ import java.io.IOException;
 
 public class JsonUtil {
 
-    private JsonUtil() {
-        throw new IllegalStateException("Utility class");}
-
     public static JsonNode getJsonFromFile(String fileName) throws IOException {
         File file = new File(System.getProperty("user.dir") + "/src/test/resources/json_files/" + fileName);
         return new ObjectMapper().readTree(file);
     }
 
-    public static String getSchemaPath(String schemaFileName) {
-        return "json_files/" + schemaFileName;
+    public static String getJsonSchemaPath(String schemaFileName) {
+        return "json-files/" + schemaFileName;
     }
 
 }

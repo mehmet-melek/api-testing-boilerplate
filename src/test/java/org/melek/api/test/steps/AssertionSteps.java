@@ -30,7 +30,7 @@ public class AssertionSteps {
     @And("response schema must be same as {string}")
     public void responseSchemaMustBeSameAs(String responseSchemaFile) {
         base.response.then().assertThat()
-                .body(matchesJsonSchemaInClasspath(JsonUtil.getSchemaPath(responseSchemaFile)));
+                .body(matchesJsonSchemaInClasspath(JsonUtil.getJsonSchemaPath(responseSchemaFile)));
     }
 
     @And("data list must have {int} element")

@@ -1,4 +1,4 @@
-package org.melek.api.test;
+package org.melek.api.test.hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;

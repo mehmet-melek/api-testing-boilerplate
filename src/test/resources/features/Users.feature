@@ -22,11 +22,3 @@ Feature: User Operations
     And current page should be 2
     Then per_page value should be 6
     And data list must have 6 element
-
-  @Post
-  Scenario: When post user validated response status
-    Given request body is "post-user.json"
-    When post "/api/users"
-    Then status code should be 201
-
-
