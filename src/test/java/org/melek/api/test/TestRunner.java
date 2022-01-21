@@ -11,7 +11,7 @@ import org.melek.api.test.configurations.RunnerConfiguration;
 @RunWith(Cucumber.class)
 @CucumberOptions(publish = false,
         features = "src/test/resources/features",
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+        plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
 public class TestRunner {
 

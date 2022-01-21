@@ -65,8 +65,8 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>2.22.2</version>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M5</version>
                     <configuration>
                         <systemPropertyVariables>
                             <!--Extent report configuration-->
@@ -80,9 +80,6 @@
                                 target/test-report/${reportFileName}/report.json
                             </extent.reporter.json.out>
                             <extent.reporter.spark.config>src/test/resources/extent-config.xml</extent.reporter.spark.config>
-                            <extent.reporter.spark.base64imagesrc>true</extent.reporter.spark.base64imagesrc>
-                            <screenshot.dir>target/test-report/${reportFileName}/media/</screenshot.dir>
-                            <screenshot.rel.path>../${reportFileName}/media/</screenshot.rel.path>
                             <systeminfo.Environment>${env.code}</systeminfo.Environment>
                             <systeminfo.Tested_Application_Version>${sut.version}</systeminfo.Tested_Application_Version>
                             <systeminfo.OS_Name>${os.name}</systeminfo.OS_Name>
@@ -95,8 +92,8 @@
                     <executions>
                         <execution>
                             <goals>
-                                <goal>integration-test</goal>
-                                <goal>verify</goal>
+                                <goal>test</goal>
+                                <goal>test</goal>
                             </goals>
                             <configuration>
                                 <skipTests>false</skipTests>
