@@ -2,13 +2,13 @@ package org.melek.api.test.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
 import org.melek.api.test.utils.JsonUtil;
 
 import java.util.List;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.*;
 
 public class AssertionSteps {
 
@@ -36,7 +36,7 @@ public class AssertionSteps {
     @And("data list must have {int} element")
     public void dataListMustHaveElement(int dataSize) {
         List<String> list = base.response.jsonPath().get("data");
-        Assert.assertEquals(dataSize, list.size());
+        assertEquals(dataSize, list.size());
     }
 
     @Then("status code should be {int}")
